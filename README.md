@@ -20,6 +20,8 @@ The tool can also become very noisy and, currently, attempts to download even th
 
 The tool reliability is also based on the JADX output, thus, errors in JADX may mean that some classes can't be downloaded. In that case, other decompilation tools could be used
 
+The tool starts from WEB-INF/web.xml and downloads from there any xml file that is referenced. Any file not listed there, although common (e.g. WEB-INF/server-config.wsdd), is not automatically downloaded. A wordlist of common paths under WEB-INF or META-INF should be added to be bruteforced.
+
 ## Installation
 
 Clone the repository:
